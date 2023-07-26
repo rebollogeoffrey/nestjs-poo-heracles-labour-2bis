@@ -4,6 +4,6 @@ import { WeaponsController } from './weapons.controller';
 
 @Module({
   providers: [WeaponsService],
-  controllers: [WeaponsController]
+  controllers: [WeaponsController],
 })
 export class WeaponsModule {}
