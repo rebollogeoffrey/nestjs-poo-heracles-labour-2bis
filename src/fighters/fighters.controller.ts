@@ -22,6 +22,7 @@ export class FightersController {
     this.shield = null;
     // this.isHardMode = false;
   }
+
   fight(defender: FightersController) {
     const previousLife: number = defender.life;
 
@@ -51,7 +52,7 @@ export class FightersController {
     return defender.life;
   }
 
-  getDamage() {
+  private getDamage() {
     if (this.weapon !== null) {
       return this.strength + this.weapon.damage;
     } else {
@@ -59,9 +60,9 @@ export class FightersController {
     }
   }
 
-  getDefense() {
+  private getDefense() {
     if (this.shield !== null) {
-      return this.dexterity; // + this.shield.protection;
+      return this.dexterity + this.shield.protection;
     } else {
       return this.dexterity;
     }

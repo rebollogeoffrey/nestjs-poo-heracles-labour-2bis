@@ -1,1 +1,1 @@
-export class Shield {}
+export class ShieldEntity {}
